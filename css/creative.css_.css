@@ -495,40 +495,10 @@ body {
     width:100%;
     overflow: hidden;
 }
-.video-container video {
-    position: relative;
-}
 video {
     position:absolute;
     z-index:0;
 }
 video.fillWidth {
     width: 100%;
-}
-
-.header-container {
-    position: relative;
-}
-
-.header-container .header-content-inner {
-    position: absolute;
-    width: 100%;
-    top: 35%;
-}
-
-.header-container .header-content-inner p {
-    font-size: 20px;
-}
-
-@media(max-width: 400px) {
-    .video-container {
-        padding-top: 50px;
-    }
-    .header-container .header-content-inner {
-        top: 30%;
-    }
-    .header-container .header-content-inner h2 {
-        font-size: 20px;
-    }
-
 }
