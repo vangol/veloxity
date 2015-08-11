@@ -178,7 +178,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url('../img/header.jpg');
+    background-image: url(../img/header.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -498,12 +498,17 @@ body {
 .video-container video {
     position: relative;
 }
+.video-container video::-webkit-media-controls {
+    display:none !important;
+}
 video {
     position:absolute;
     z-index:0;
 }
 video.fillWidth {
-    width: 100%;
+    /*width: 100%;*/
+    margin-bottom: -6px;
+    padding: 0;
 }
 
 .header-container {
@@ -530,5 +535,7 @@ video.fillWidth {
     .header-container .header-content-inner h2 {
         font-size: 20px;
     }
-
+    video.fillWidth {
+        width: 100%;
+    }
 }
